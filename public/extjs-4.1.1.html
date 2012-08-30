@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webkit + Ext JS 4.1.1</title>
+
+  <script src="/extjs-4.1.1/ext-all.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+	//<![CDATA[
+		Ext.onReady(function(){
+	  
+			Ext.create('Ext.Button', {
+				renderTo: Ext.getBody(),
+			    text: 'Test',
+			    handler: function() {
+			        Ext.create('Ext.form.Panel', {
+			        	renderTo: Ext.getBody(),
+			        	html: 'You clicked the button!'
+			        });
+			    }
+			})
+	  
+		});
+		
+	//]]>
+  </script>
+</head>
+<body>
+  <h1>Webkit + Ext JS 4.1.1</h1>
+</body>
+</html>

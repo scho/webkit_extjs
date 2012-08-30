@@ -1,0 +1,41 @@
+#!/bin/bash
+echo " #######################################################"
+echo " ### RUNNING CUCUMBER SCENARIOS IN ISOLATED SETUPS   ###"
+echo " #######################################################"
+echo ""
+echo ""
+
+echo " ############################################################"
+echo " ### First Ext JS 4.0.2a and then 4.1.1 works with webkit ###"
+echo " ############################################################"
+cucumber features/extjs_4_0_2a_and_4_1_1_webkit.feature
+echo ""
+echo ""
+
+echo " ###################################################################"
+echo " ### First Ext JS 4.1.1 and then 4.0.2a doesn't work with webkit ###"
+echo " ###################################################################"
+cucumber features/extjs_4_1_1_and_4_0_2a_webkit.feature
+
+echo ""
+echo ""
+echo " #######################################################"
+echo " ### Only Ext JS 4.1.1 doesn't work with webkit      ###"
+echo " #######################################################"
+cucumber features/extjs_4_1_1_webkit.feature
+
+echo ""
+echo ""
+echo " #######################################################"
+echo " ### Only Ext JS 4.0.2a works with webkit            ###"
+echo " #######################################################"
+cucumber features/extjs_4_0_2a_webkit.feature
+
+
+echo ""
+echo ""
+echo " #######################################################"
+echo " ### Runnig both Ext JS versions with selenium works ###"
+echo " #######################################################"
+cucumber features/extjs_4_0_2a_selenium.feature
+cucumber features/extjs_4_1_1_selenium.feature
