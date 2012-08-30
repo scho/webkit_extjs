@@ -1,6 +1,6 @@
 # Ext JS + capybara-webkit
 
-This rails app is just to demonstrate a bug the is described [here](https://github.com/thoughtbot/capybara-webkit/issues/383)
+This rails app is just used to demonstrate a bug the is described [here](https://github.com/thoughtbot/capybara-webkit/issues/383).
 
 ## Usage
 
