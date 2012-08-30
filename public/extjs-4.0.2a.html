@@ -11,11 +11,11 @@
 	  
 			Ext.create('Ext.Button', {
 				renderTo: Ext.getBody(),
-			    text: 'Test',
+			    text: 'Show Version',
 			    handler: function() {
 			        Ext.create('Ext.form.Panel', {
 			        	renderTo: Ext.getBody(),
-			        	html: 'You clicked the button!'
+			        	html: 'Ext JS Version: ' + Ext.getVersion()
 			        });
 			    }
 			})

@@ -7,5 +7,5 @@ This rails app is just to demonstrate a bug the is described [here](https://gith
 * Clone the repository
 * Install [capybara-webkit](https://github.com/thoughtbot/capybara-webkit)
 * bundle install
-* script/cucumber_isolated
+* Run different cucumber scenarios isolated: script/cucumber_isolated
 
