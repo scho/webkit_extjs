@@ -1,4 +1,5 @@
 before_script:
+  - "dpkg -l libqt4-dev"
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
 script: ./script/cucumber_isolated
